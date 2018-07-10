@@ -6,9 +6,9 @@ from django.contrib.auth.decorators import permission_required
 from django.shortcuts import get_object_or_404, render
 from django.utils.six import text_type
 from django.utils.translation import ugettext as _
-from wagtail.wagtailadmin.forms import SearchForm as AdminSearchForm
-from wagtail.wagtailadmin.modal_workflow import render_modal_workflow
-from wagtail.wagtailsearch.backends import get_search_backend
+from wagtail.admin.forms import SearchForm as AdminSearchForm
+from wagtail.admin.modal_workflow import render_modal_workflow
+from wagtail.search.backends import get_search_backend
 
 from ..forms import SearchForm
 from ..models import Poll

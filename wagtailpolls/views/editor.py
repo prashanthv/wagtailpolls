@@ -5,10 +5,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 from django.utils.lru_cache import lru_cache
 
-from wagtail.wagtailadmin.edit_handlers import (
+from wagtail.admin.edit_handlers import (
     ObjectList, extract_panel_definitions_from_model_class)
-from wagtail.wagtailcore.models import Page
-
+from wagtail.core.models import Page
 
 @lru_cache(maxsize=None)
 def get_poll_edit_handler(Poll):

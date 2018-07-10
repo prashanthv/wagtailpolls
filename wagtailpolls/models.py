@@ -10,9 +10,9 @@ from django.utils.text import slugify
 from django.utils.translation import ugettext_lazy as _
 from modelcluster.fields import ParentalKey
 from modelcluster.models import ClusterableModel
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel
-from wagtail.wagtailsearch import index
-from wagtail.wagtailsearch.backends import get_search_backend
+from wagtail.admin.edit_handlers import FieldPanel, InlinePanel
+from wagtail.search import index
+from wagtail.search.backends import get_search_backend
 
 
 class PollQuerySet(QuerySet):
