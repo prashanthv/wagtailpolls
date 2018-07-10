@@ -9,7 +9,7 @@ Installing
 
 Install using pip::
 
-    pip install wagtailpolls
+    pip install git+https://github.com/prashanthv/wagtailpolls
 
 It works with Wagtail 2.1 and upwards.
 
